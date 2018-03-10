@@ -12,7 +12,7 @@
   // 'new' an object
   var Greetr = function (firstName, lastName, language) {
     return new Greetr.init(firstName, lastName, language);
-  }
+  };
 
   // hidden within the scope of IIFI and never directly accessible
   var supportedLangs = ['en', 'es'];
@@ -33,7 +33,7 @@
   var logMessages = {
     en: 'Logged In',
     es: 'Conectado'
-  }
+  };
 
   // prototype holds methods (to save memory space)
   Greetr.prototype = {
@@ -134,7 +134,7 @@
     self.language = language || 'en';
 
     self.validate();
-  }
+  };
 
   Greetr.init.prototype = Greetr.prototype;
 
